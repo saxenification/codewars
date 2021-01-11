@@ -15,16 +15,5 @@ Array's length > 2.
 */
 
 function toCsvText(array) {
-    let CSV = []
-for(pick of array){
-    for(number of pick){
-        CSV.push(number.toString())
-    }
-    CSV.push("/n")
+return array.join("\n")
 }
-return CSV.join()
-}
-console.log(toCsvText([[ 0, 1, 2, 3, 4 ],
-    [ 10,11,12,13,14 ],
-    [ 20,21,22,23,24 ],
-    [ 30,31,32,33,34 ]]))
